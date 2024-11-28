@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Create/Update Food Acceptor Profile</title>
+    <link rel="stylesheet" href="{% static 'css/styles.css' %}">
+</head>
+<body>
+    <h1>Create/Update Food Acceptor Profile</h1>
+    <form method="POST" action="{% url 'create_food_acceptor_profile' %}">
+        {% csrf_token %}
+        <label for="name">Food Acceptor Name:</label>
+        <input type="text" name="name" required><br>
+        <label for="type">Type (e.g., Charity, Shelter):</label>
+        <input type="text" name="type" required><br>
+        <label for="contact">Contact Number:</label>
+        <input type="text" name="contact" required><br>
+        <button type="submit">Save Profile</button>
+    </form>
+    <nav>
+        <a href="{% url 'dashboard' %}">Back to Dashboard</a>
+    </nav>
+</body>
+</html>

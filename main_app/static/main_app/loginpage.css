@@ -1,0 +1,90 @@
+/* General Reset */
+body {
+    margin: 0;
+    padding: 0;
+    font-family:'Source Code Pro', monospace;;
+    background: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+  }
+  
+  .container {
+    width: 100%;
+    max-width: 400px;
+    background: #ffffff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    text-align: center;
+  }
+  
+  .login-box h1 {
+    font-size: 24px;
+    margin-bottom: 10px;
+    color: #333333;
+  }
+  
+  .login-box p {
+    font-size: 14px;
+    margin-bottom: 20px;
+    color: #555555;
+  }
+  
+  .input-box {
+    margin-bottom: 15px;
+    text-align: left;
+  }
+  
+  .input-box label {
+    display: block;
+    margin-bottom: 5px;
+    font-size: 14px;
+    color: #333333;
+  }
+  
+  .input-box input {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 14px;
+    color: #333333;
+  }
+  
+  .input-box input:focus {
+    border-color: #c89116;
+    outline: none;
+  }
+  
+  .btn {
+    width: 100%;
+    padding: 10px;
+    background-color: #c89116;
+    color: #ffffff;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    margin-top: 10px;
+  }
+  
+  .btn:hover {
+    background-color: #d4a017;
+  }
+  
+  .options {
+    margin-top: 15px;
+    font-size: 14px;
+  }
+  
+  .options a {
+    text-decoration: none;
+    color: #c89116;
+  }
+  
+  .options a:hover {
+    text-decoration: underline;
+  }
+  

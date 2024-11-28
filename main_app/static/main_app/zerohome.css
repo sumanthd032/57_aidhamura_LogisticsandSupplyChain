@@ -1,0 +1,142 @@
+/* General Styles */
+body {
+    margin: 0px;
+    padding:0px;
+    font-family:'Source Code Pro', monospace;;
+    color: #333;
+    background-color: #f4f4f4;
+    background-image: url(background.webp);
+    background-size: cover;
+    height: 100vh;
+    display: flex;
+    flex-direction: column; /* Align elements in a vertical stack */
+    min-height: 100vh;
+}
+
+.nav {
+    background-color: #333;
+    color: #fff;
+    padding: 17px 0;
+    position:static;
+    width: 100%;
+    height: 68px;
+    display: flex;
+    justify-content: space-between;
+    gap:30px;
+
+}
+
+.nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+
+.nav ul li {
+    display: inline-block;
+    margin: 0 15px;
+}
+
+.nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 30px;
+    
+}
+
+.nav ul li a:hover {
+    color: #00bcd4;
+}
+
+/* Content Section */
+.content {
+    max-width: 800px;
+    height:300px;
+    margin: 30px auto;
+    background: #97f9f9;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 5px;
+    padding:100px;
+    align-items: center;
+    background-image:url(hotel.jpg);
+    background-size: cover;
+    opacity: 0.8;
+    
+    
+}
+
+.content h1 {
+    font-size: 2.5rem;
+    margin-bottom: 15px;
+    color: #0f1211;
+    text-align: center;
+    
+}
+
+.content p {
+    font-size: 1rem;
+    color: #0f1211;
+    text-align: justify;
+    font-weight: bolder;
+}
+
+.nav img{
+    /* display: flex;
+    justify-content: start; */
+    border-radius: 30%;
+    padding-left: 30px;
+}
+
+
+.register a{
+    background: #1c9a6d;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    margin: 10px 0;
+    text-decoration: none;
+   
+}
+.register{
+    display: flex;
+    justify-content: center;
+}
+
+@keyframes typing {
+    from {
+      width: 0
+    }
+    to{
+        width:100%
+    }
+  }
+      
+  @keyframes blink {
+    50% {
+      border-color: transparent
+    }
+  }
+
+  .content p{
+    width: 100%;
+    animation: typing 2s steps(50), blink .5s step-end infinite alternate;
+    animation-iteration-count: 2;
+    white-space: nowrap;
+    overflow: hidden;
+    border-right: 3px solid;
+    font-family: monospace;
+    font-size: 2em;
+
+  }
+
+  .footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+    margin-top: auto;
+}

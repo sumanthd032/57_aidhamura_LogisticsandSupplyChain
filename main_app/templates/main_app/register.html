@@ -1,0 +1,28 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Register/Login - Zero Plate</title>
+    <link rel="stylesheet" href="{% static 'main_app/styles.css' %}">
+</head>
+<body>
+    <nav>
+        <ul>
+            <li><a href="/">Home</a></li>
+            <li><a href="/about/">About</a></li>
+            <li><a href="/features/">Features</a></li>
+            <li><a href="/register/">Login/Register</a></li>
+        </ul>
+    </nav>
+    <header>
+        <h1>Register or Login</h1>
+        <p>Select your role:</p>
+        <div>
+            <a href="/register/restaurant/" class="btn">Restaurant</a>
+            <a href="/register/food_acceptor/" class="btn">Food Acceptor</a>
+        </div>
+    </header>
+</body>
+</html>

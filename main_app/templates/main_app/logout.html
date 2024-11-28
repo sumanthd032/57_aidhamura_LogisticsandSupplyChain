@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Logout</title>
+    <link rel="stylesheet" href="{% static 'css/styles.css' %}">
+</head>
+<body>
+    <h1>Logout</h1>
+    <p>You have been logged out successfully. <a href="{% url 'login' %}">Log in again</a>.</p>
+    <nav>
+        <a href="{% url 'home' %}">Home</a>
+    </nav>
+</body>
+</html>

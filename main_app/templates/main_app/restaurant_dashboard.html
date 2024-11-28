@@ -1,0 +1,32 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Restaurant Dashboard</title>
+    <link rel="stylesheet" href="{% static 'css/styles.css' %}">
+    <script src="{% static 'js/scripts.js' %}" defer></script>
+</head>
+<body>
+    <div class="container">
+        <h1>Welcome to the Restaurant Dashboard</h1>
+        <section class="chart-section">
+            <h2>Chart Data</h2>
+            <!-- Chart rendering logic goes here -->
+            <div class="chart-container">
+                <p>Chart displaying data for waste and donations over the past week.</p>
+            </div>
+        </section>
+        <section class="recommendations-section">
+            <h2>AI Recommendations</h2>
+            <ul>
+                {% for recommendation in ai_recommendations %}
+                    <li>{{ recommendation }}</li>
+                {% endfor %}
+            </ul>
+        </section>
+    </div>
+</body>
+</html>

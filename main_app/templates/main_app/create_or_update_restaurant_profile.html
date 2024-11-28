@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Create/Update Restaurant Profile</title>
+    <link rel="stylesheet" href="{% static 'css/styles.css' %}">
+</head>
+<body>
+    <h1>Create/Update Restaurant Profile</h1>
+    <form method="POST" action="{% url 'create_restaurant_profile' %}">
+        {% csrf_token %}
+        <label for="name">Restaurant Name:</label>
+        <input type="text" name="name" required><br>
+        <label for="address">Address:</label>
+        <input type="text" name="address" required><br>
+        <label for="phone">Phone:</label>
+        <input type="text" name="phone" required><br>
+        <label for="email">Email:</label>
+        <input type="email" name="email" required><br>
+        <button type="submit">Save Profile</button>
+    </form>
+    <nav>
+        <a href="{% url 'dashboard' %}">Back to Dashboard</a>
+    </nav>
+</body>
+</html>

@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Dashboard</title>
+    <link rel="stylesheet" href="{% static 'css/styles.css' %}">
+</head>
+<body>
+    <h1>Welcome to Your Dashboard</h1>
+    <p>View your restaurant's data, manage transactions, and make predictions here.</p>
+    <nav>
+        <a href="{% url 'home' %}">Home</a>
+        <a href="{% url 'add_food_transaction' %}">Add Food Transaction</a>
+        <a href="{% url 'create_restaurant_profile' %}">Manage Profile</a>
+        <a href="{% url 'create_food_donation' %}">Create Donation</a>
+        <a href="{% url 'ai_prediction' %}">AI Prediction</a>
+    </nav>
+</body>
+</html>
